@@ -3,7 +3,7 @@ arr = [50, 40, 70, 60, 90]
 index = [3, 0, 4, 1, 2]
 n = len(arr)
 temp = [0] * n
-print(temp)
+print(temp)#heolllo
  
 # arr[i] should be
     # present at index[i] index

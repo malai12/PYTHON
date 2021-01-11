@@ -1,20 +1,13 @@
-# Driver program
-arr = [50, 40, 70, 60, 90]
-index = [3, 0, 4, 1, 2]
-n = len(arr)
-temp = [0] * n
-print(temp)#heolllo
+from itertools import permutations
+from tqdm import tqdm
+def largest(l):
+    lst = []
+    for i in tqdm(permutations(l, len(l))):
+        # provides all permutations of the list values,
+        # store them in list to find max
+        print(i,end=" ")
+        lst.append("".join(map(str,i))) 
+    #print(lst)    
+    return max(lst)
  
-# arr[i] should be
-    # present at index[i] index
-for i in range(0,n):
-    temp[index[i]] = arr[i]
-    print(index[i],end=" ")
-print(temp)
-# Copy temp[] to arr[]
-for i in range(0,n):
-    arr[i] = temp[i]
-    print(temp[i],end=" ")
-    index[i] = i
-    
-    
+print(largest([54, 546, 548, 60]))

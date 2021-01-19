@@ -102,4 +102,4 @@ print(search2d(newtodary,32))
 print("-------------------- deletion in 2d array ---------------------")
 
 newtodary = np.delete(newtodary,0,axis=1)                    #time complexity O(mn)
-print(newtodary)                                              # space complexity O(1)
+print(newtodary)                                              # space complexity O(1)gig
